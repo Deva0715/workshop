@@ -1,26 +1,10 @@
-# 🎓 Workshop: Getting Started with Ollama & Running LLaMA Models
+# Workshop: Getting Started with Ollama & Running LLaMA Models
 
 Welcome to our hands-on workshop! This guide walks you through installing **Ollama**, running **LLaMA models**, customizing behavior, and backing up results — all beginner-friendly!
 
 ---
 
-## 🎤 Self Introduction
-
-### 👨‍💻 SK. Muneer – *Tech Guide*
-
-Hello everyone! I’m SK. Muneer, a passionate technology educator and AI enthusiast.
-I specialize in making complex technologies approachable and hands-on.
-Today, I’ll guide you through using **Ollama** and **LLaMA** models to build powerful AI applications.
-
-### 👩‍💻 Aishwarya – *Clarity Coach*
-
-Hi there! I’m Aishwarya — a software engineer and advocate for open-source learning.
-I focus on simplifying technical concepts so anyone can explore and innovate with AI.
-We’re here to ensure you get real results with practical demos, not just theory.
-
----
-
-## 🧽 Table of Contents
+## Table of Contents
 
 1. [What is Ollama?](#what-is-ollama)
 2. [Why Use Ollama?](#why-use-ollama)
@@ -38,47 +22,47 @@ We’re here to ensure you get real results with practical demos, not just theor
 
 ---
 
-## 🧠 What is Ollama?
+## What is Ollama?
 
 **Ollama** is an open-source tool that lets you run LLMs (like LLaMA3) locally — no internet required post-setup.
 
-* 🔐 Private by default
-* ⚡ Fast & efficient
-* 🧠 Supports popular models
-* 💽 Works on macOS, Linux & Windows (via WSL2)
+* Private by default
+* Fast & efficient
+* Supports popular models
+* Works on macOS, Linux & Windows (via WSL2)
 
 ---
 
-## 💡 Why Use Ollama?
+## Why Use Ollama?
 
-| Feature          | Benefit                                  |
-| ---------------- | ---------------------------------------- |
-| ✅ Runs Locally   | Full offline capabilities after download |
-| 🔐 Private       | No data leaves your device               |
-| 🚀 Simple Setup  | Works across platforms                   |
-| 🧠 Model Variety | LLaMA, Mistral, and more supported       |
-| ↺ Dev Friendly   | Python integration and automation ready  |
-
----
-
-## 🧰 What You’ll Need
-
-* 💻 macOS / Linux / Windows (WSL2)
-* 📀 Minimum 8GB RAM (16GB+ recommended)
-* 🌐 Internet for downloading models
-* 🧑‍💼 Basic Terminal skills
+| Feature       | Benefit                                  |
+| ------------- | ---------------------------------------- |
+| Runs Locally  | Full offline capabilities after download |
+| Private       | No data leaves your device               |
+| Simple Setup  | Works across platforms                   |
+| Model Variety | LLaMA, Mistral, and more supported       |
+| Dev Friendly  | Python integration and automation ready  |
 
 ---
 
-## ⚙️ Installing Ollama
+## What You’ll Need
 
-### 🗅 macOS
+* macOS / Linux / Windows (WSL2)
+* Minimum 8GB RAM (16GB+ recommended)
+* Internet for downloading models
+* Basic Terminal skills
+
+---
+
+## Installing Ollama
+
+### macOS
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-### 🐧 Linux (Debian/Ubuntu-based)
+### Linux (Debian/Ubuntu-based)
 
 ```bash
 sudo apt update
@@ -86,7 +70,7 @@ sudo apt install -y curl
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-### 🪠 Windows (via WSL2)
+### Windows (via WSL2)
 
 1. Install **Ubuntu from the Microsoft Store**
 2. Launch Ubuntu and run:
@@ -97,7 +81,7 @@ sudo apt install -y curl
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-### ✅ Verify Installation
+### Verify Installation
 
 ```bash
 ollama --version
@@ -105,7 +89,7 @@ ollama --version
 
 ---
 
-## 🧪 Running LLaMA Models
+## Running LLaMA Models
 
 ### Step 1: Pull the model
 
@@ -128,7 +112,7 @@ Explain black holes in simple terms.
 
 ---
 
-## 🎛️ Customizing Model Behavior
+## Customizing Model Behavior
 
 Use the Python API to fine-tune how the model responds:
 
@@ -153,21 +137,21 @@ print(response["response"])
 
 ---
 
-## 📖 Understanding Responses
+## Understanding Responses
 
 Ollama can:
 
-* 🧠 Answer questions
-* 💻 Generate and explain code
-* 📚 Summarize documents
-* ✍️ Write creative stories or poems
-* 📊 Explain data and concepts clearly
+* Answer questions
+* Generate and explain code
+* Summarize documents
+* Write creative stories or poems
+* Explain data and concepts clearly
 
-> ⚠️ Always verify important info — it may occasionally hallucinate or guess.
+> Always verify important info — it may occasionally hallucinate or guess.
 
 ---
 
-## ☁️ Backing Up Outputs to Google Drive
+## Backing Up Outputs to Google Drive
 
 ### Step 1: Install rclone
 
@@ -193,47 +177,44 @@ rclone copy ~/ollama_output remote_drive:/ollama_backup
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
-| Problem                | Solution                                      |
-| ---------------------- | --------------------------------------------- |
-| ❌ Can't download model | Check internet connection                     |
-| 🧠 Out of memory error | Try a smaller model: `llama3:8b`              |
-| ⚠️ Command not found   | Reinstall Ollama or add it to your PATH       |
-| 🚫 GPU not used        | Ensure your CUDA/NVIDIA drivers are installed |
+| Problem              | Solution                                      |
+| -------------------- | --------------------------------------------- |
+| Can't download model | Check internet connection                     |
+| Out of memory error  | Try a smaller model: `llama3:8b`              |
+| Command not found    | Reinstall Ollama or add it to your PATH       |
+| GPU not used         | Ensure your CUDA/NVIDIA drivers are installed |
 
 ---
 
-## 🤝 Contributing to Ollama
+## Contributing to Ollama
 
 Ollama is fully **open-source**. You can:
 
-* 🐞 Report issues
-* 💡 Suggest features
-* 📙 Improve docs
-* 💻 Submit PRs
+* Report issues
+* Suggest features
+* Improve docs
+* Submit PRs
 
-🔗 [GitHub – ollama/ollama](https://github.com/ollama/ollama)
+[GitHub – ollama/ollama](https://github.com/ollama/ollama)
 
 ---
 
-## 📄 License
+## License
 
 * Ollama uses the **MIT License** — use, modify, and share freely.
 * Each model (e.g., LLaMA3) may have its own license — review before redistribution.
 
 ---
 
-## 📬 Contact
+## Contact
 
-| Name      | Email                                                 | GitHub Handle                                  |
-| --------- | ----------------------------------------------------- | ---------------------------------------------- |
-| Muneer    | [muneer@example.com](mailto:muneer@example.com)       | [@muneerai](https://github.com/muneerai)       |
-| Aishwarya | [aishwarya@example.com](mailto:aishwarya@example.com) | [@aishwaryaml](https://github.com/aishwaryaml) |
+For questions or support, visit: [https://darion.in](https://darion.in)
 
 ---
 
-## 📦 Appendix: Full Install Script
+## Appendix: Full Install Script
 
 Below is the actual install script used by Ollama (as of June 2025):
 
@@ -260,15 +241,15 @@ tar -xzf ollama.tar.gz -C ~/.ollama
 sudo mv ~/.ollama/ollama /usr/local/bin/ollama
 rm -rf ~/.ollama ollama.tar.gz
 
-echo "✅ Ollama installed successfully!"
+echo "Ollama installed successfully!"
 ```
 
 ---
 
-## 🎉 Final Words
+## Final Words
 
-Thank you for attending the workshop!
+Thank you for exploring Ollama!
 
-> 🧠 AI is no longer just for experts — it's for *everyone* who’s curious, creative, and ready to build.
+> AI is no longer just for experts — it's for *everyone* who’s curious, creative, and ready to build.
 
-Go ahead, experiment with LLaMA, build something cool — and have fun! 🚀
+Go ahead, experiment with LLaMA, build something cool — and have fun!
