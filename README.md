@@ -210,7 +210,7 @@ Ollama is fully **open-source**. You can:
 
 ## Contact
 
-For questions or support, visit: [https://darion.in](https://darion.in)
+For questions or support, visit: [https://darion.in](https://contact@darion.in)
 
 
 ## Final Words
